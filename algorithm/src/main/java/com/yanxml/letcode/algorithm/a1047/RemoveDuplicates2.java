@@ -47,11 +47,12 @@ public class RemoveDuplicates2 {
 				while(front >=0  && single[front]==1 ) {
 					front--;
 				}
-				// 如果 front<0 则进行重置操作.
 				if(front <0) {
+					// 如果 front<0 则进行重置操作.
 					front = end+1;
 					end = end+2;
 				}else {
+					// 否则顺位走一格即可
 					end++;
 				}
 			}else {
